@@ -61,8 +61,8 @@
     <script>
         // 你的 API 地址和令牌
         const API_URL = 'https://api.haozhuyun.cn/sms/';
-        const TOKEN = '12979f4ebab7cfffd6069421814867df106969388cadff01681df476bc797634557346b8cf0cae5fb464752fced4a6a7f575cd4e734324d3bfa823f2b6db9ef2001af8d4261dfa7f';
-        const SID = '54507';
+        const TOKEN = '12979f4ebab7cfffd6069421814867df106969388cadff01681df476bc797634557346b8cf0cae5fb464752fced4a6a7f575cd4e734324d3bfa823f2b6db9ef2001af8d4261dfa7f';  // 替换成从登录获取的令牌
+        const SID = '54507';  // 替换成你的项目ID
 
         // 获取手机号
         document.getElementById('getPhoneBtn').addEventListener('click', function() {
