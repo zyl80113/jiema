@@ -66,7 +66,7 @@
 
         // 获取手机号
         document.getElementById('getPhoneBtn').addEventListener('click', function() {
-            fetch(API_URL + `?api=getPhone&token=${TOKEN}&sid=${SID}`)
+            fetch(`${API_URL}?api=getPhone&token=${TOKEN}&sid=${SID}`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.code === "0") {
@@ -85,7 +85,7 @@
         document.getElementById('getCodeBtn').addEventListener('click', function() {
             const phone = document.getElementById('phone').innerText.split(': ')[1];
 
-            fetch(API_URL + `?api=getMessage&token=${TOKEN}&sid=${SID}&phone=${phone}`)
+            fetch(`${API_URL}?api=getMessage&token=${TOKEN}&sid=${SID}&phone=${phone}`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.code === "0") {
